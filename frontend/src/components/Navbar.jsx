@@ -118,7 +118,7 @@ const Navbar = () => {
             to="/news"
             className="text-gray-200 hover:text-indigo-700 font-bold"
           >
-            Galary
+            News
           </NavLink>
           <NavLink
             to="/contactForm"
