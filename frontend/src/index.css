@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+.active{
+  color: red;
+}
+.company-name .active{
+  color: rgb(90, 28, 248);
+}
+.register .active{
+  color: rgb(19, 19, 218);
+}

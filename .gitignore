@@ -1,0 +1,7 @@
+// ignore all files with .md extension.
+*.md 
+Notes.md
+// ignore all files with .txt extension.
+*.txt
+
+.env
