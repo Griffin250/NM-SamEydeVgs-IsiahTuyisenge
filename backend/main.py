@@ -53,48 +53,44 @@ speakers_data = [
 ]
 
 events_data = [
+
   {
-    "id": 1,
-    "title": "AI & Cybersecurity Workshop",
-    "description": "Dive into how AI is transforming modern cybersecurity and threat detection systems.",
-    "date": "2025-05-01",
+    id: 1,
+    "title": "Tall Ships Arrival Parade",
+    "description": "Witness the majestic tall ships as they arrive in Kristiansand, marking the commencement of the festival.",
+    "date": "2025-07-30",
+    "time": "12:00"
+  },
+  {
+    id: 2,
+    "title": "Open Ship Tours",
+    "description": "Explore the decks of participating tall ships and meet their international crews.",
+    "date": "2025-07-31",
     "time": "10:00"
   },
   {
-    "id": 2,
-    "title": "Web3: Decentralized Future",
-    "description": "Explore blockchain, smart contracts, and the new internet economy with top Web3 developers.",
-    "date": "2025-05-01",
-    "time": "13:30"
-  },
-  {
-    "id": 3,
-    "title": "Hackathon Kickoff",
-    "description": "Join the official hackathon opening. Form teams, brainstorm ideas, and begin coding for prizes.",
-    "date": "2025-05-02",
-    "time": "09:00"
-  },
-  {
-    "id": 4,
-    "title": "Startup Pitch Arena",
-    "description": "Watch startups pitch their products to a live jury of investors and tech leaders.",
-    "date": "2025-05-02",
+    id: 3,
+    "title": "Crew Parade",
+    "description": "Enjoy the vibrant parade featuring crews from around the world, showcasing their cultures and camaraderie.",
+    "date": "2025-08-01",
     "time": "15:00"
   },
   {
-    "id": 5,
-    "title": "Closing Keynote: The Future of Code",
-    "description": "A visionary talk on the next 10 years of programming, automation, and ethical AI.",
-    "date": "2025-05-03",
-    "time": "16:00"
+    id: 4,
+    "title": "Country Music Night with Arthur Stulien",
+    "description": "Experience an evening of country music with Arthur Stulien on the main stage. Free entry!",
+    "date": "2025-07-31",
+    "time": "22:00"
   },
   {
-  "id": 6,
-  "title": "AI & Cybersecurity Workshop",
-  "description": "Learn how AI is transforming the cybersecurity space.",
-  "date": "2025-05-01",
-  "time": "14:00"
-}
+    id: 5,
+    "title": "Fireworks Display",
+    "description": "Conclude the festivities with a spectacular fireworks show over the harbor.",
+    "date": "2025-08-02",
+    "time": "22:30"
+  }
+
+
 ]
 
 
