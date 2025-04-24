@@ -21,18 +21,16 @@ Skole-NM Konkurrasen 2025
 ```markdown
 # 🚀 Tallship Races
 
+
 Tall Ships Races is a full-stack event management platform designed to showcase upcoming events, handle attendee registrations, manage admin operations, and boost user engagement through a dynamic newsletter and subscription system. It features multi-language support, a fully responsive design, and is built for seamless deployment using Docker across both frontend and backend services.
----
+
+## 📸 Preview
 
 ## 📸 Preview
 
 ![Web wireframe](./Wireframe.tldr)
 
-
-
----
-
-## 🧰 Tech Stack
+# 🧰 Tech Stack
 
 | Layer       | Tech Used                            |
 |------------|----------------------------------------|
