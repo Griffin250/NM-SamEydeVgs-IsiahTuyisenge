@@ -13,6 +13,8 @@ import PrivateRoute from "./components/PrivateRoute";
 import "./theme.css";
 import ContactForm from "../src/components/pages/ContactForm";
 import Booking from "./components/pages/Booking";
+import Map from "./components/layouts/Map";
+import TallShipsCMS from "./components/pages/TallShipsCMS";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
             <Route path="/booking" element={<Booking />} />
             <Route path="*" element={<NotFound />} />
             <Route path="/contactForm" element={<ContactForm />} />
+            <Route path="/map" element={<Map />} />
+            <Route path="/shipTracker" element={<TallShipsCMS />} />
             {/* Protected Admin Route */}
             <Route
               path="/admin"

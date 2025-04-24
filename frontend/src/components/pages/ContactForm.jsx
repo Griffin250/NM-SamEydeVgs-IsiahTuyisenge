@@ -54,10 +54,10 @@ const ContactForm = () => {
         <h2 className="text-2xl font-semibold mb-4">Connect with us</h2>
         <p className="text-blue-600 mb-4">
           <a
-            href="mailto:sam-it-ub@hotmail.com"
+            href="mailto:tallshipraces@hotmail.com"
             className="hover:text-orange-600 hover:translate-x-1 hover:transition-all"
           >
-            sam-it-ub@helpdesk.no{" "}
+            tallshipraces.no{" "}
           </a>
           <br />
           <a
@@ -68,7 +68,7 @@ const ContactForm = () => {
             +47 46629764{" "}
           </a>
         </p>
-        <h3 className="text-lg font-semibold mb-2">Arendal, Norway</h3>
+        <h3 className="text-lg font-semibold mb-2">Kristiansand, Norway</h3>
         <a
           href="https://www.google.com/maps/place/Sam+Eyde+high+school"
           className="text-blue-600 mb-4 hover:text-orange-700 hover:translate-x-1 hover:transition-all"
@@ -76,7 +76,7 @@ const ContactForm = () => {
         >
           Østensbuveien 80,
           <br />
-          4848 Arendal
+          4848 Kristiansand
         </a>
         <div className="flex space-x-4 mt-4">
           <a

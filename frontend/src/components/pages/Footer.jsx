@@ -64,7 +64,10 @@ const Footer = () => {
         {/* Map */}
         <div>
           <h3 className="text-lg font-semibold mb-3">Location</h3>
+          <div className="h-2xl rounded-lg overflow-hidden shadow-md"> 
           <Map />
+          </div>
+         
         </div>
       </div>
 

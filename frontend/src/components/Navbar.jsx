@@ -17,11 +17,13 @@ const Navbar = () => {
               src={Logo}
               className="w-28 h-24 bg-gray-200 dark:bg-gray-200 rounded m-1"
             />{" "}
-          
           </NavLink>
         </h3>
-        <section className="md:hidden"> <ThemeToggle /> </section>
-        
+        <section className="md:hidden">
+          {" "}
+          <ThemeToggle />{" "}
+        </section>
+
         <form className="hidden md:flex items-center gap-2">
           {/* Combined Search & Location Input */}
           <div className="relative flex-1 flex items-center border border-gray-400 rounded-full overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow">
@@ -101,7 +103,7 @@ const Navbar = () => {
             Events
           </NavLink>
           <NavLink
-            to="/help"
+            to="/map"
             className="text-gray-200 hover:text-indigo-700 font-bold"
           >
             Map
@@ -152,9 +154,7 @@ const Navbar = () => {
           <NavLink to="/events" className="block text-gray-200 font-bold">
             Events
           </NavLink>
-          <NavLink to="/speakers" className="block text-gray-200 font-bold">
-            Speakers
-          </NavLink>
+        
           <NavLink to="/news" className="block text-gray-200 font-bold">
             News
           </NavLink>

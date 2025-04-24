@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import '../../../src/theme.css';
+import "../../../src/theme.css";
 const Booking = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -65,9 +65,15 @@ const Booking = () => {
           <option value="" disabled>
             Select Event Type
           </option>
-          <option value="concert"  className="table-header">🎵 Concert</option>
-          <option value="ship-tour" className="table-header">🚢 Ship Tour</option>
-          <option value="workshop" className="table-header">🛠 Workshop</option>
+          <option value="concert" className="table-header">
+            🎵 Concert
+          </option>
+          <option value="ship-tour" className="table-header">
+            🚢 Ship Tour
+          </option>
+          <option value="workshop" className="table-header">
+            🛠 Workshop
+          </option>
         </select>
         <textarea
           name="message"

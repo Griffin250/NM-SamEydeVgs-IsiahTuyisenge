@@ -1,9 +1,11 @@
 # NM-SamEydeVgs-IsiahTuyisenge
+
 Skole-NM Konkurrasen 2025
 
+                            ## README
 
-                            ## README 
 ## Contents
+
 - Project overview
 - Tech stack
 - Features
@@ -21,7 +23,6 @@ Skole-NM Konkurrasen 2025
 ```markdown
 # 🚀 Tallship Races
 
-
 Tall Ships Races is a full-stack event management platform designed to showcase upcoming events, handle attendee registrations, manage admin operations, and boost user engagement through a dynamic newsletter and subscription system. It features multi-language support, a fully responsive design, and is built for seamless deployment using Docker across both frontend and backend services.
 
 ## 📸 Preview
@@ -32,13 +33,13 @@ Tall Ships Races is a full-stack event management platform designed to showcase 
 
 # 🧰 Tech Stack
 
-| Layer       | Tech Used                            |
-|------------|----------------------------------------|
-| **Frontend** | React.js, Tailwind CSS, React Router, Axios, i18next |
-| **Backend**  | FastAPI (Python), Pydantic, Motor (MongoDB Driver)  |
-| **Database** | MongoDB                              |
-| **Auth**     | JWT-based authentication             |
-| **Deployment** | Docker, Docker Compose, Nginx (SPA routing) |
+| Layer          | Tech Used                                            |
+| -------------- | ---------------------------------------------------- |
+| **Frontend**   | React.js, Tailwind CSS, React Router, Axios, i18next |
+| **Backend**    | FastAPI (Python), Pydantic, Motor (MongoDB Driver)   |
+| **Database**   | MongoDB                                              |
+| **Auth**       | JWT-based authentication                             |
+| **Deployment** | Docker, Docker Compose, Nginx (SPA routing)          |
 
 ---
 
@@ -56,59 +57,59 @@ Tall Ships Races is a full-stack event management platform designed to showcase 
 ---
 
 ## 📁 Folder Structure
-
 ```
+
 tall-ships-2025/
 │
-├── backend/                          # FastAPI app
-│   ├── app/
-│   │   ├── main.py                   # Entry point
-│   │   ├── database.py              # MongoDB/Atlas connection
-│   │   ├── config.py                # Environment vars
-│   │   ├── models/                  # Pydantic models
-│   │   │   ├── event.py
-│   │   │   ├── booking.py
-│   │   │   └── news.py
-│   │   ├── routes/                  # API endpoints
-│   │   │   ├── events.py
-│   │   │   ├── bookings.py
-│   │   │   ├── news.py
-│   │   │   └── cms.py               # CMS API integration
-│   │   ├── utils/                   # Countdown, formatting, etc.
-│   │   └── auth/                    # (Optional) Admin login
-│   ├── requirements.txt
-│   ├── Dockerfile
-│   └── .env
+├── backend/ # FastAPI app
+│ ├── app/
+│ │ ├── main.py # Entry point
+│ │ ├── database.py # MongoDB/Atlas connection
+│ │ ├── config.py # Environment vars
+│ │ ├── models/ # Pydantic models
+│ │ │ ├── event.py
+│ │ │ ├── booking.py
+│ │ │ └── news.py
+│ │ ├── routes/ # API endpoints
+│ │ │ ├── events.py
+│ │ │ ├── bookings.py
+│ │ │ ├── news.py
+│ │ │ └── cms.py # CMS API integration
+│ │ ├── utils/ # Countdown, formatting, etc.
+│ │ └── auth/ # (Optional) Admin login
+│ ├── requirements.txt
+│ ├── Dockerfile
+│ └── .env
 │
-├── frontend/                         # React/Vite + Tailwind
-│   ├── public/
-│   │   └── index.html
-│   ├── src/
-│   │   ├── assets/                  # Images, icons, video
-│   │   ├── components/
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── Countdown.jsx
-│   │   │   └── Footer.jsx
-│   │   ├── layouts/                # Pages
-│   │   │   ├── Home.jsx
-│   │   │   ├── Schedule.jsx
-│   │   │   ├── Map.jsx
-│   │   │   ├── Booking.jsx
-│   │   │   ├── News.jsx
-│   │   │   └── Social.jsx
-│   │   ├── App.jsx
-│   │   ├── main.jsx
-│   │   └── i18n.js                 # Translation
-│   ├── Dockerfile
-│   ├── package.json
-│   └── .env
+├── frontend/ # React/Vite + Tailwind
+│ ├── public/
+│ │ └── index.html
+│ ├── src/
+│ │ ├── assets/ # Images, icons, video
+│ │ ├── components/
+│ │ │ ├── Navbar.jsx
+│ │ │ ├── Countdown.jsx
+│ │ │ └── Footer.jsx
+│ │ ├── layouts/ # Pages
+│ │ │ ├── Home.jsx
+│ │ │ ├── Schedule.jsx
+│ │ │ ├── Map.jsx
+│ │ │ ├── Booking.jsx
+│ │ │ ├── News.jsx
+│ │ │ └── Social.jsx
+│ │ ├── App.jsx
+│ │ ├── main.jsx
+│ │ └── i18n.js # Translation
+│ ├── Dockerfile
+│ ├── package.json
+│ └── .env
 │
-├── docker-compose.yml               # Dev orchestration (optional)
-├── render.yaml                      # For Render deploys
-├── README.md                        # Install/run instructions
+├── docker-compose.yml # Dev orchestration (optional)
+├── render.yaml # For Render deploys
+├── README.md # Install/run instructions
 └── .gitignore
 
-```
+````
 
 ---
 
@@ -118,9 +119,10 @@ tall-ships-2025/
 
 ```bash
 docker-compose up --build
-```
+````
 
 Then access:
+
 - Frontend: [http://localhost:3000](http://localhost:3000)
 - Backend API: [http://localhost:8000/docs](http://localhost:8000/docs)
 - MongoDB: localhost:27017 (connect with Compass)
@@ -151,15 +153,15 @@ npm run dev
 
 ## 🧪 API Endpoints (REST)
 
-| Method | Endpoint                | Description                      |
-|--------|-------------------------|----------------------------------|
-| GET    | `/events`              | Fetch all events                  |
-| GET    | `/news`                | Fetch all news                    |
-| POST   | `/register`           | Register user                      |
-| POST   | `/subscribe`          | Subscribe to newsletter            |
-| POST   | `/auth/login`         | Admin login (returns JWT)          |
-| GET    | `/admin/registers`    | Get all registered users (auth)    |
-| GET    | `/admin/subscribers`  | Get all subscribers (auth)         |
+| Method | Endpoint             | Description                     |
+| ------ | -------------------- | ------------------------------- |
+| GET    | `/events`            | Fetch all events                |
+| GET    | `/news`              | Fetch all news                  |
+| POST   | `/register`          | Register user                   |
+| POST   | `/subscribe`         | Subscribe to newsletter         |
+| POST   | `/auth/login`        | Admin login (returns JWT)       |
+| GET    | `/admin/registers`   | Get all registered users (auth) |
+| GET    | `/admin/subscribers` | Get all subscribers (auth)      |
 
 > Swagger available at `/docs`
 
@@ -239,3 +241,4 @@ Feel free to fork, learn, or contribute 🤝
 ```
 
 ---
+```
