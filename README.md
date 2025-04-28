@@ -1,9 +1,5 @@
 # NM-SamEydeVgs-IsiahTuyisenge
 
-Skole-NM Konkurrasen 2025
-
-                            ## README
-
 ## Contents
 
 - Project overview

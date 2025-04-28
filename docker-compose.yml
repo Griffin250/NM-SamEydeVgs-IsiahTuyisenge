@@ -8,7 +8,7 @@ services:
     depends_on:
       - mongo
     environment:
-      - MONGO_URL = "mongodb+srv://admin:admin12@tallshipraces.9aydfnp.mongodb.net/admin?retryWrites=true&w=majority"
+      - MONGO_URL=mongodb://mongo:27017
 
   frontend:
     build: ./frontend
